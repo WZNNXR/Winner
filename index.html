@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="mystyle.css">
+
+        <title>Site</title>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+        </nav>
+
+        <div class="slidecon">
+            <img class="mySlides" src="Keep/1.jpeg" style="width:100%">
+            <img class="mySlides" src="Keep/2.jpeg" style="width:100%">
+            <img class="mySlides" src="Keep/3.jpeg" style="width:100%">
+            <img class="mySlides" src="Keep/4.jpeg" style="width:100%">
+            <img class="mySlides" src="Keep/5.jpeg" style="width:100%">
+          
+            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+          </div>
+<h1 style="width: 100%;text-align: center;margin-top: 5%">Golden State Worriors</h1>
+          <div class="citem" style="margin-top: 5%;">
+            <img src="Keep/mm.webp">
+            <img src="Keep/kt.jpeg">
+            <img src="Keep/kl.png">
+          </div>
+          <div class="citem" style="margin-top: 5%;">
+            <img src="Keep/sc.png">
+            <img src="Keep/jp.webp">
+            <img src="Keep/dg.webp">
+          </div>
+          <div style="padding-bottom: 5%;"></div>
+
+        <script>
+            var slideIndex = 1;
+            showDivs(slideIndex);
+            
+            function plusDivs(n) {
+              showDivs(slideIndex += n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                 x[i].style.display = "none";  
+              }
+              x[slideIndex-1].style.display = "block";  
+            }
+            </script>
+    </body>
+</html>

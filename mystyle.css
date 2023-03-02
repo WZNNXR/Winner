@@ -1,0 +1,120 @@
+*{
+    box-sizing: border-box;
+    
+  }
+  @font-face {
+    font-family: 'thai';
+    src: url(../font/SB\ -\ Modern.ttf);
+    font-weight:normal;
+    font-style: normal;
+    
+
+  }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      height: 100%;
+    }
+  html{
+    scroll-behavior: smooth;
+    height: 100%;
+  }
+
+  h1{
+    font-family: "Poppins";
+  }
+
+  /* Style the header */
+  header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+  }
+
+  .school{
+    height: 100%;
+  }
+
+  /* Container for flexboxes */
+  section {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Style the navigation menu */
+  nav {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: rgb(255, 255, 255);
+    height: 50px;
+    width: 100%;
+    padding: 12px;
+    text-align: center;
+    top:0;
+    transition: all 0.5s;
+    z-index: 9999999;
+  }
+    
+    /* Style the list inside the menu */
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  nav a{
+    padding: 0 2%;
+    font-family: "Poppins";
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    opacity: 1;
+    transition: all 0.5s;
+    position: relative;
+  }
+
+  .mySlides{
+    display: none;
+  }
+
+  .slidecon{
+    width: 80%;
+    margin: auto;
+    margin-top: 2%;
+    position: relative;
+  }
+  
+.w3-display-left {
+    position: absolute;
+    top: 50%;
+    left: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(-0%,-50%);
+}
+
+
+.w3-display-right {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(0%,-50%);
+    -ms-transform: translate(0%,-50%);
+}
+
+.citem{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.citem img{
+    margin: 0 5%;
+    width: 25%;
+    background-color: blueviolet;
+    border-radius: 10px;
+    transition: all 0.4s;
+}
+.citem img:hover{
+    transform: translateY(-10px);
+}
